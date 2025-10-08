@@ -2,6 +2,9 @@ package org.example;
 
 public class QSort {
    public void quickSort(Double [] data, int left, int right){
+       if(data == null || data.length == 0){
+           return;
+       }
        if(left < right){
             int pivotIndex =  partition(data,left,right);
             quickSort(data,left,pivotIndex - 1);
