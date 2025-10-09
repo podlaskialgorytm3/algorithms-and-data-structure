@@ -55,7 +55,7 @@ class ISortTest {
     @Test
     public void shouldBeSorted_whenInArrayAreRandomElements(){
         RandomNumberGenerator rng = new RandomNumberGenerator();
-        Double [] tab = rng.getRandomNumbers(-100.00, 200.00, 5);
+        Double [] tab = rng.getRandomNumbers(-100.00, 200.00, 100);
         Double [] tabSortedByInsetionSort = Arrays.copyOf(tab,tab.length);
         Double [] tabSortedByJavaUtil = Arrays.copyOf(tab,tab.length);
         Arrays.sort(tabSortedByJavaUtil);
