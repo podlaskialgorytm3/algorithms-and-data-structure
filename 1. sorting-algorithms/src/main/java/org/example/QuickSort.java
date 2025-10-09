@@ -1,6 +1,4 @@
-package org.example.Sorter;
-
-import org.example.Sorter;
+package org.example;
 
 public class QuickSort implements Sorter {
     @Override
