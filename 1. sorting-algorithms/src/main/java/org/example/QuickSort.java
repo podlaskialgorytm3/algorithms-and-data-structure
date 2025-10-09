@@ -23,15 +23,14 @@ public class QuickSort implements Sorter {
             for(int j = left; j < right; j++){
                 if(data[j] <= pivot){
                     i++;
-                    replace(data[i], data[j]);
+                    double temp = data[i];
+                    data[i] = data[j];
+                    data[j] = temp;
                 }
             }
-            replace(data[i], data[right]);
+            double temp = data[right];
+            data[right] = data[i+1];
+            data[i+1] = temp;
             return i+1;
-    }
-    private void replace(Double element1, Double element2){
-        double temp = element1;
-        element1 = element2;
-        element2 = temp;
     }
 }
