@@ -1,6 +1,8 @@
 package org.example;
 
 public class InsertionSort implements Sorter {
+    private int countOfIteration = 0;
+
     @Override
     public void sort(Double [] data){
         if(data == null){
@@ -19,8 +21,17 @@ public class InsertionSort implements Sorter {
             while(j >= 0 && data[j] > key){
                 data[j+1] = data[j];
                 j--;
+                //Iteration count
+                countOfIteration++;
             }
             data[j+1] = key;
         }
     }
+    public int getCountOfIteration() {
+        return countOfIteration;
+    }
+
+    @Override
+    public String toString(){
+        return new String("=== Algorithm InsertionSort === \n" + countOfIteration);    }
 }

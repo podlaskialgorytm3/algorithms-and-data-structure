@@ -8,8 +8,15 @@ public class Main{
         System.out.println("Sorting alghoritms");
 
         RandomNumberGenerator rng = new RandomNumberGenerator();
-        Double [] data = rng.getRandomNumbers(-100.00,100.00,5);
-        Double [] dataInsertionSort = Arrays.copyOf(data, data.length);
-        Double [] dataQuickSort = Arrays.copyOf(data, data.length);
+        Sorter [] sorters = new  Sorter[]{new QuickSort(), new InsertionSort()};
+
+        // Testing Paramteters
+        for(Sorter sorter : sorters){
+            Double [] data = rng.getRandomNumbers(-100.00,100.00,100);
+            sorter.sort(data);
+            System.out.println(sorter);
+        }
+
+
     }
 }
