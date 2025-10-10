@@ -3,7 +3,10 @@ package org.example;
 public class QuickSort implements Sorter {
     @Override
     public void sort(Double [] data){
-        if(data == null || data.length == 0){
+        if(data == null){
+            return;
+        }
+        if(data.length == 0){
             return;
         }
         quickSort(data,0,data.length-1);

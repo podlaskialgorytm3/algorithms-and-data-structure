@@ -3,8 +3,12 @@ package org.example;
 public class InsertionSort implements Sorter {
     @Override
     public void sort(Double [] data){
-        if(data.length == 0 || data == null)
+        if(data == null){
             return;
+        }
+        if(data.length == 0){
+            return;
+        }
         insertionSort(data);
     }
     private void insertionSort(Double [] data){
