@@ -34,3 +34,4 @@ public class QuickSort implements Sorter {
             return i+1;
     }
 }
+
