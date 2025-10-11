@@ -24,6 +24,7 @@ public class MergeSort implements Sorter{
         int k = 0;
 
         double [] temp = new double[right - left + 1];
+
         while(i <= mid && j <= right){
             if(data[i] <= data[j]){
                 temp[k++] = data[i++];
@@ -32,6 +33,7 @@ public class MergeSort implements Sorter{
                 temp[k++] = data[j++];
             }
         }
+
         while(i <= mid){
             temp[k++] = data[i++];
         }
