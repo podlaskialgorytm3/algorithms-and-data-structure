@@ -48,7 +48,7 @@ public class QuickSort implements Sorter {
     }
     @Override
     public String toString(){
-        return new String("=== Algorithm QuickSort === \n" + countOfIteration);
+        return new String("=== Algorithm QuickSort === \n" + "Iteration count: " + countOfIteration);
     }
 }
 

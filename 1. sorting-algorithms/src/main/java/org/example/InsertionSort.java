@@ -33,5 +33,5 @@ public class InsertionSort implements Sorter {
 
     @Override
     public String toString(){
-        return new String("=== Algorithm InsertionSort === \n" + countOfIteration);    }
+        return new String("=== Algorithm InsertionSort === \n" + "Iteration count: " +  countOfIteration);    }
 }
