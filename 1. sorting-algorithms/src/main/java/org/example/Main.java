@@ -8,7 +8,7 @@ public class Main{
         System.out.println("Sorting alghoritms");
 
         RandomNumberGenerator rng = new RandomNumberGenerator();
-        Sorter [] sorters = new  Sorter[]{new QuickSort(), new InsertionSort(), new MergeSort()};
+        Sorter [] sorters = new  Sorter[]{new QuickSort(), new InsertionSort(), new MergeSort(), new HeapSort()};
 
         // Testing Paramteters
         for(Sorter sorter : sorters){
