@@ -8,7 +8,7 @@ import java.util.Arrays;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SorterTest {
-    public Sorter [] sorters = new Sorter [] {new InsertionSort(), new QuickSort(), new MergeSort(), new HeapSort()};
+    public Sorter [] sorters = new Sorter [] {new InsertionSort(), new QuickSort(), new MergeSort(), new HeapSort(), new SelectionSort()};
     public RandomNumberGenerator rng = new RandomNumberGenerator();
 
     @Test
