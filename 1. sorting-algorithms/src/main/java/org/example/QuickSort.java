@@ -4,6 +4,7 @@ import java.util.StringJoiner;
 
 public class QuickSort implements Sorter {
     private int countOfIteration = 0;
+    private RandomNumberGenerator rng = new RandomNumberGenerator();
 
     @Override
     public void sort(Double [] data){
@@ -40,6 +41,9 @@ public class QuickSort implements Sorter {
             double temp = data[right];
             data[right] = data[i+1];
             data[i+1] = temp;
+
+            rng.readOneLine(data);
+
             return i+1;
     }
     @Override

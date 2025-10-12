@@ -38,4 +38,12 @@ public class RandomNumberGenerator {
             System.out.println(String.format("%.2f",number) + " ");
         }
     }
+
+    public void readOneLine(Double [] randomNumbers){
+        System.out.print("[ ");
+        for(double number : randomNumbers){
+            System.out.print(String.format("%.2f",number) + " ");
+        }
+        System.out.print(" ]\n");
+    }
 }
