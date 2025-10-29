@@ -42,8 +42,6 @@ public class QuickSort implements Sorter {
             data[right] = data[i+1];
             data[i+1] = temp;
 
-            rng.readOneLine(data);
-
             return i+1;
     }
     @Override
